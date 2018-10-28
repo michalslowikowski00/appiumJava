@@ -30,7 +30,6 @@ public class TestCalculator extends TestBase {
     public void promptResultBelowAction(){
         calculatorPage.enterFormulaText("2+3");
         String formulaText = calculatorPage.getFormulaText();
-        String resultText = calculatorPage.getResultText();
         assertEquals("formula text should be 2+3", "2+3", formulaText);
     }
 }
